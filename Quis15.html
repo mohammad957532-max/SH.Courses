@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HS.Courses</title>
+  <link rel="stylesheet" href="Quis15.css">
+</head>
+<body>
+    
+
+  <div class="container">
+
+    <!-- صفحة الترحيب -->
+    <div id="welcomeSection">
+      <h2>مرحباً بك في HS.Courses</h2>
+      <p>منصة تعليمية لتعلم البرمجة خطوة بخطوة</p>
+      <button onclick="showLogin()">ابدأ</button>
+    </div>
+
+    <!-- تسجيل الدخول -->
+    <div id="authSection" style="display: none;">
+      <div class="box" id="loginBox">
+        <h2>تسجيل الدخول</h2>
+        <input type="text" id="usernameInput" placeholder="اسم المستخدم">
+        <input type="password" id="passwordInput" placeholder="كلمة المرور">
+        <button onclick="verifyLogin()">دخول</button>
+        <p id="loginMessage" style="color: red;"></p>
+      </div>
+    </div>
+
+    <!-- اختيار الكورس -->
+    <div id="courseSelection" style="display:none;">
+      <h2>اختر الكورس</h2>
+      <button onclick="startCourse()">كورس تطوير الويب</button>
+    </div>
+
+    <!-- محتوى الكورس -->
+    <div id="courseContent" style="display:none;">
+      <div class="lesson">
+        <h2>الدرس الأول: مقدمة في البرمجة</h2>
+        <video id="lessonVideo" width="100%" controls onended="videoFinished()">
+          <source src="Quis15.mp4" type="video/mp4">
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+
+        <div style="margin-top: 20px;">
+          <h3>📄 مراجعة قبل الاختبار</h3>
+          <a href="assets/docs/review.pdf" target="_blank">اضغط هنا لعرض ملف المراجعة PDF</a>
+        </div>
+
+        <div class="description">
+          <p>هذا الدرس يشرح أساسيات المتغيرات في لغة JavaScript...</p>
+        </div>
+
+        <div class="quiz" id="quizSection" style="display:none;">
+          
+
+
+  <script src="Quis15.js"></script>
+  
+</body>
+</html>
